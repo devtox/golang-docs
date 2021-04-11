@@ -28,6 +28,16 @@ Go uses a garbage collector to manage memory allocation for its variables; the p
 
 Go is a simple, straightforward language with a syntax similar to C. You'll write code faster, with fewer bugs.
 
+package main
+
+```go 
+import "fmt"
+ 
+func main() {
+    fmt.Println("Hello World!")
+}
+```
+
 * **Performance**
 
 Go is fast. It's compiled so you don't have to pay for the runtime overheads of a JIT-compiler, and memory management is built-in so you don't have to be concerned about it. A clean slate design also means less time waiting for new releases of libraries and frameworks.
@@ -47,3 +57,7 @@ Deploying Go code is also easy and fast. You can treat Go applications as any ot
 * **It has a simple package system**
 
 How Go handles packages is extremely nice. The go get command is simple and powerful.
+
+```go
+go get example.com/pkg
+```
